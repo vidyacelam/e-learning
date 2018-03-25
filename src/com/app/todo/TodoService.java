@@ -52,7 +52,7 @@ public class TodoService {
 			if (conn != null && !conn.isClosed()) {
 
 				Statement stmt = conn.createStatement();
-				String sql = "insert into todos(category,description,user_id,location) values('"+todo.getCategory()+"','"+todo.getDescription()+"','"+todo.getUser_id()+" "+todo.getLocation()+"' )";
+				String sql = "insert into todos(category,description,user_id,location) values('"+todo.getCategory()+"','"+todo.getDescription()+"',"+todo.getUser_id()+" '"+todo.getLocation()+"' )";
 				System.out.println(sql);
 				int insert = stmt.executeUpdate(sql);
 				if(insert==1)

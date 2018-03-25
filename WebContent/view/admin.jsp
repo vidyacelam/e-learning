@@ -1,4 +1,4 @@
-<%@include file="/common/header.jspf" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -28,32 +28,48 @@ border:1px solid rgba(0,0,0,0,1);
 }
 </style>
 </head>
-<header>
- 		<nav class="navbar navbar-default">
-			<a href="/" class="navbar-brand">E-Learning</a>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="report">Report</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="login.do">Login</a></li>
-			</ul>
-		</nav>
- </header>
+
 
  
 <body>
-
+<header>
+<nav class ="navbar navbar-default">
+<a href="#" class="navbar-brand">E-Learning</a>
+<ul class="nav navbar-nav">
+<li  ><a href="#">Home</a></li>
+<li><a href="#" data-toggle="modal" data-target="#registerUser">Report</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">List of students<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">vidya</a></li>
+<li><a href="#">sindhu</a></li>
+</ul></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">List of professors<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">ram</a></li>
+<li><a href="#">ravi</a></li>
+</ul></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">List of files<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">mysql</a></li>
+<li><a href="http://www.tutorialspoint.com/html/html_tutorial.pdf">html</a></li>
+</ul></li>
+</ul>
+</nav>
+</header>
  <div class="container">
  
- <form action="login.do" method="post" class="form-signin">
+ <form ">
 		<p>
 			<font color="red">${error}</font>
 		</p>
-		<input type="text" class="form-control" name="name" placeholder="Name" required="" autofocus="" />
-			<input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-			    	      
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button> 
+
+     <a href="http://localhost:8080/TODO_Application/view/Adduser.jsp" class="btn btn-lg btn-primary btn-block" role="button">Add user</a>
+     <a href="#" class="btn btn-lg btn-primary btn-block" role="button">delete user</a>
+      
+      <!--  <button class="btn btn-lg btn-primary btn-block" type="submit">delete user</button> -->
 			    	
 	</form>
 

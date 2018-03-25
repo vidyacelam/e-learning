@@ -1,12 +1,18 @@
 <%@include file="/common/header.jspf" %>
 <%@include file="/common/nav_login.jspf" %>
 
- <div class="container">
+<style>
+
+
+
+</style>
+ <div class="container"style="background-color:lightblue">
  
  
  
  
-  <div class="tab">
+  <div class="tab"style="background-color:Bisque">
+  
   <button class="tablinks" onclick="openCourse(event, 'Computer')">COMPUTER</button>
   <button class="tablinks" onclick="openCourse(event, 'Cooking')">COOKING</button>
   <button class="tablinks" onclick="openCourse(event, 'Civils')">CIVILS</button>
@@ -22,7 +28,7 @@
 	</p>
 </div>
 
-<div id="Cooking" class="tabcontent">
+<div id="Cooking" class="tabcontent" >
   <h3>COOKING</h3>
   <p> If you have wanted to learn how to cook, whether it's to attract the love of your life,
    or maybe you have a passion to cook healthy and nutritious meals for family or friends, or

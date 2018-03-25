@@ -1,6 +1,6 @@
 <header>
- 		<nav class="navbar navbar-default">
-			<a href="/" class="navbar-brand">Brand</a>
+ 		<nav class="navbar navbar-inverse">
+			<a href="/" class="navbar-brand">E-Learning</a>
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="todoList.do">Todos</a></li>

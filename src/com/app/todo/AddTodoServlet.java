@@ -32,10 +32,13 @@ public class AddTodoServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String description = request.getParameter("todo");
+		
 		String category = request.getParameter("category");
+		System.out.println("Category = "+ category);
 		int user_id= (int)request.getSession().getAttribute("user_id");
 		//int msg_id= (int)request.getSession().getAttribute("msg_id");
 		String location = request.getParameter("location");
+		System.out.println("Location = "+ location);
 		try
 		{
 			conn = ds.getConnection();
